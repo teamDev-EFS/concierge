@@ -1,0 +1,6 @@
+export interface Member { id: string; name: string; tier: 'Founder' | 'Black' | 'Platinum'; email: string; avatar: string; homeBase: string; lastTrip: string; spendYtd: number; }
+export interface Flight { id: string; aircraft: string; category: string; route: string; departure: string; arrival: string; duration: string; price: number; seats: number; image: string; status: 'Available' | 'Limited'; }
+export interface ConciergeService { id: string; title: string; category: 'Ground' | 'Lifestyle' | 'Hospitality'; description: string; priceNote: string; eta: string; image: string; }
+export interface Hotel { id: string; name: string; city: string; rating: number; suite: string; nightlyRate: number; image: string; perks: string[]; }
+export interface TourExperience { id: string; name: string; location: string; duration: string; style: string; image: string; summary: string; }
+export interface ItineraryItem { id: string; type: 'Flight' | 'Hotel' | 'Transfer' | 'Tour'; title: string; time: string; location: string; notes: string; status: 'Confirmed' | 'Pending'; }
