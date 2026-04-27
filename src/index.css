@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0A0F1E;
+  --surface-1: #111827;
+  --surface-2: #1F2937;
+  --surface-3: #374151;
+  --border: #1F2937;
+  --border-strong: #374151;
+  --primary: #EC4899;
+  --primary-hover: #DB2777;
+  --primary-subtle: #831843;
+  --text-primary: #F9FAFB;
+  --text-secondary: #9CA3AF;
+  --text-tertiary: #6B7280;
+  --success: #10B981;
+  --warning: #F59E0B;
+  --danger: #EF4444;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: radial-gradient(circle at top right, rgba(236,72,153,0.12), transparent 25%), var(--background);
+  color: var(--text-primary);
+}
+* { box-sizing: border-box; }
+#root { min-height: 100vh; }
+
+@layer utilities {
+  .card-luxury { @apply rounded-xl border border-border bg-surface-1 shadow-lg p-6; }
+  .text-gradient { background: linear-gradient(135deg, #fbcfe8 0%, #f9fafb 45%, #fde68a 100%); -webkit-background-clip: text; color: transparent; }
+}

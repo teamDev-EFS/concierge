@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "generator": "promptfloe",
+  "generatedAt": "2026-04-27T17:35:26.348Z",
+  "project": {
+    "name": "concierge",
+    "framework": "react",
+    "chatId": null
+  },
+  "repo": "teamDev-EFS/concierge",
+  "urls": {
+    "app": "https://promptfloe.com",
+    "docs": "https://docs.promptfloe.com"
+  }
+}
